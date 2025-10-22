@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>112 출동 시 외국인 현장체크리스트</title>
+<style>
+body {font-family:Apple SD Gothic Neo, Malgun Gothic, Arial; margin:16px; background:#f7f9fc; color:#111;}
+h1{font-size:1.5rem;}
+h2 {cursor:pointer; background:#0b63c6; color:#fff; padding:10px; border-radius:8px; margin:10px 0;}
+h3 {cursor:pointer; background:#0b84d6; color:#fff; padding:8px; border-radius:6px; margin:6px 0;}
+h4 {cursor:pointer; background:#0c96e0; color:#fff; padding:6px; border-radius:5px; margin:4px 0;}
+.content {display:none; background:#fff; padding:10px 15px; margin-bottom:10px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+label{display:block; margin:6px 0;}
+a{color:#0b63c6; text-decoration:none;}
+.note{background:#fff8e1; padding:10px; border-radius:8px; border:1px solid #ffe08a; margin-top:10px;}
+</style>
+</head>
+<body>
+<h1>112 출동 시 외국인 현장체크리스트</h1>
+
+<h2 onclick="toggleSection(this)">1. 신고 접수</h2>
+<div class="content">
+  <h3 onclick="toggleSection(this)">▶ 출동/비출동 여부 판단</h3>
+  <div class="content">
+    <h4 onclick="toggleSection(this)">▶ 단순 출입국관리법 관련 신고</h4>
+    <div class="content">
+      <label><input type="checkbox"> 신고자에게 출입국관서에 신고하도록 안내</label>
+      <label><input type="checkbox"> 신고 접수 경찰관은 관할 출입국관서에 신고내용 통보 (비출동 종결)</label>
+    </div>
+    <h4 onclick="toggleSection(this)">▶ 기타 형법 위반 여지가 있는 신고</h4>
+    <div class="content">
+      <label><input type="checkbox"> 출동하여 사실관계 확인</label>
+    </div>
+  </div>
+</div>
+
+<h2 onclick="toggleSection(this)">2. 출동 및 유형별 조치</h2>
+<div class="content">
+  <h3 onclick="toggleSection(this)">▶ 사전 외국인 신원확인(출입국법 위반 여부 판단)</h3>
+  <div class="content">
+    <label><input type="checkbox"> 여권 소지 확인</label>
+    <label><input type="checkbox"> 체류기간 확인</label>
+    <label><input type="checkbox"> 체류자격 확인(체류자격외 활동 확인)</label>
+    
+    <h4 onclick="toggleSection(this)">참고:</h4>
+    <div class="content">
+      <h4 onclick="toggleSection(this)">1. 신원확인방법</h4>
+      <div class="content">
+        <h4 onclick="toggleSection(this)">① 폴리폰(외국인 체류정보 조회)으로 신원확인</h4>
+        <div class="content">
+          <h4 onclick="toggleSection(this)">▶ 장기체류 외국인</h4>
+          <div class="content">
+            <label><input type="checkbox"> 외국인등록번호 13자리 입력 후 조회</label>
+          </div>
+          <h4 onclick="toggleSection(this)">▶ 단기체류 외국인</h4>
+          <div class="content">
+            <label><input type="checkbox"> 영문성명 3글자 이상, 생년월일(1개월 간격), 성별 입력 후 조회</label>
+            <label><input type="checkbox"> 조회결과 목록에서 대상자와 일치하는 성명, 생년월일 확인하여 인적사항 특정</label>
+            <label><input type="checkbox"> 여권의 성, 이름의 앞뒤가 뒤바뀌거나 일부가 누락된 경우가 있으므로 다양한 조합으로 시도 필요</label>
+          </div>
+        </div>
+
+        <h4 onclick="toggleSection(this)">② 형사사법정보시스템으로 신원확인</h4>
+        <div class="content">
+          <h4 onclick="toggleSection(this)">▶ 장기체류 외국인</h4>
+          <div class="content">
+            <label><input type="checkbox"> KICS &gt; 사건수사 &gt; 정보검색 &gt; 법무부정보 &gt; 정보구분 &gt; 장기체류 외국인 신원정보 선택</label>
+            <label><input type="checkbox"> 법무부정보 조회요청 화면에서 외국인등록번호 13자리, 성명(영문 1글자 이상) 입력</label>
+            <label><input type="checkbox"> 외국인 선택, 승인자, 조회목적 입력 후 승인요청</label>
+            <label><input type="checkbox"> 승인되면 결과보기 활성화됨</label>
+            <div class="note">※ 성명은 필수 입력사항이나 외국인등록번호만 확실하면 성명이 틀려도 검색 가능</div>
+          </div>
+          <h4 onclick="toggleSection(this)">▶ 단기체류 외국인</h4>
+          <div class="content">
+            <label><input type="checkbox"> 성명과 생년월일을 이용하여 출입국 조회로 여권번호 등 신원 확인 가능</label>
+          </div>
+        </div>
+
+        <h4 onclick="toggleSection(this)">③ 출입국사무소를 통한 신원확인</h4>
+        <div class="content">
+          <label><input type="checkbox"> 사진·지문 등 바이오정보 감식의뢰</label>
+          <label><input type="checkbox"> 인천공항출입국 외국인청장(감식과장)에게 공문으로 의뢰</label>
+          <label><input type="checkbox"> 공문 요청 후 전화(032-740-7208)로 확인</label>
+          <label><input type="checkbox"> 통상 2~7일 소요</label>
+          <label><input type="checkbox"> 국적·사진·지문자료 및 대상자가 주장하는 이름 등 상세 기재 시 조회시간 단축됨</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 onclick="toggleSection(this)">▶ 형사법 + 출입국법 위반 시 및 형사법만 위반 시</h3>
+  <div class="content">
+    <label><input type="checkbox"> 수사 부서로 사건 인계</label>
+    <label class="note">참고:</label>
+  </div>
+
+  <h3 onclick="toggleSection(this)">▶ 출입국법만 위반 시 조치</h3>
+  <div class="content">
+    <label><input type="checkbox"> 체포 또는 임의동행 여부 판단</label>
+    <label><input type="checkbox"> 현행범인체포서 등 관련서류 작성 경찰서 주무부서로 발송(KICS)</label>
+    <label><input type="checkbox"> 불법체류자 신병 인계 통보서 작성 출입국관리사무소에 통보(온나라시스템)</label>
+    <label><input type="checkbox"> 출입국관리사무소에 신병인계(출입국으로 받은 신병 인수서 외사계 통보)</label>
+    <label class="note">참고사항</label>
+  </div>
+</div>
+
+<h2 onclick="toggleSection(this)">3. 참고사항</h2>
+<div class="content">
+  <h3 onclick="toggleSection(this)">▶ 응급대상자/주취자 처리</h3>
+  <div class="content">
+    <label><input type="checkbox"> 응급환자 119 연락 및 응급조치</label>
+    <label><input type="checkbox"> 부상자 보호 및 인도적 조치</label>
+    <label><input type="checkbox"> 일반 단순주취자 처리 (공공질서 유지)</label>
+  </div>
+
+  <h3 onclick="toggleSection(this)">▶ 통보/인계 절차</h3>
+  <div class="content">
+    <label><input type="checkbox"> 출입국사무소 통보 (전화/이메일)</label>
+    <label><input type="checkbox"> 경찰서 현장보고서 작성</label>
+    <label><input type="checkbox"> 통보/인계 기록 유지</label>
+    <div class="note">참고: 법령·지침 변경 시 즉시 업데이트</div>
+  </div>
+</div>
+
+<script>
+function toggleSection(el){
+  var content = el.nextElementSibling;
+  if(content.style.display === 'block'){
+    content.style.display = 'none';
+  }else{
+    content.style.display = 'block';
+  }
+}
+</script>
+</body>
+</html>
