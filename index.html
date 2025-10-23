@@ -5,15 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>112 출동 시 외국인 현장체크리스트</title>
 <style>
-body {font-family:Apple SD Gothic Neo, Malgun Gothic, Arial; margin:16px; background:#f7f9fc; color:#111;}
-h1{font-size:1.5rem;}
-h2 {cursor:pointer; background:#0b63c6; color:#fff; padding:10px; border-radius:8px; margin:10px 0;}
-h3 {cursor:pointer; background:#0b84d6; color:#fff; padding:8px; border-radius:6px; margin:6px 0;}
-h4 {cursor:pointer; background:#0c96e0; color:#fff; padding:6px; border-radius:5px; margin:4px 0;}
-.content {display:none; background:#fff; padding:10px 15px; margin-bottom:10px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
-label{display:block; margin:6px 0;}
-a{color:#0b63c6; text-decoration:none;}
-.note{background:#fff8e1; padding:10px; border-radius:8px; border:1px solid #ffe08a; margin-top:10px;}
+body {
+  font-family: Apple SD Gothic Neo, Malgun Gothic, Arial;
+  margin: 16px;
+  background: #f7f9fc;
+  color: #111;
+}
+h1 {
+  font-size: 1.5rem;
+}
+/* 색상 구분 */
+h2 {
+  cursor: pointer;
+  background: #0b3d91; /* 진한 남색 */
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+h2:hover {
+  background: #0d4fb7;
+}
+h3 {
+  cursor: pointer;
+  background: #1062b0; /* 중간 파랑 */
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 6px 0;
+}
+h3:hover {
+  background: #1470c5;
+}
+h4 {
+  cursor: pointer;
+  background: #3ba3e1; /* 밝은 하늘색 */
+  color: #fff;
+  padding: 6px;
+  border-radius: 5px;
+  margin: 4px 0;
+}
+h4:hover {
+  background: #5cb6eb;
+}
+.content {
+  display: none;
+  background: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+label {
+  display: block;
+  margin: 6px 0;
+}
+a {
+  color: #0b63c6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.note {
+  background: #fff8e1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ffe08a;
+  margin-top: 10px;
+}
 </style>
 </head>
 <body>
@@ -42,18 +102,13 @@ a{color:#0b63c6; text-decoration:none;}
     <label><input type="checkbox"> 여권 소지 확인</label>
       <a href="https://www.law.go.kr/법령/출입국관리법/제27조" target="_blank">🔗 출입국관리법 제27조(여권등의 휴대 및 제시)</a>
       <a href="https://www.law.go.kr/법령/출입국관리법/제98조" target="_blank">🔗 출입국관리법 제98조(100만 원 이하의 벌금)</a>
-    
-
     <label><input type="checkbox"> 체류기간 확인</label>
-     
       <a href="https://www.law.go.kr/법령/출입국관리법/제25조" target="_blank">🔗 출입국관리법 제25조(체류기간 연장허가)</a>
       <a href="https://www.law.go.kr/법령/출입국관리법/제94조" target="_blank">🔗 출입국관리법 제94조 17호(3년 이하의 징역 또는 3천만원 이하의 벌금)</a>
-    
     <label><input type="checkbox"> 체류자격 확인(체류자격외 활동 확인)</label>
-     
       <a href="https://www.law.go.kr/법령/출입국관리법/제20조" target="_blank">🔗 출입국관리법 제20조(체류자격 외 활동)</a>
       <a href="https://www.law.go.kr/법령/출입국관리법/제94조" target="_blank">🔗 출입국관리법 제94조 12호(3년 이하의 징역 또는 3천만원 이하의 벌금)</a>
-    
+
     <h4 onclick="toggleSection(this)">참고:</h4>
     <div class="content">
       <h4 onclick="toggleSection(this)">1. 신원확인방법</h4>
