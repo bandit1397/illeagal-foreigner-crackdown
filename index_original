@@ -154,6 +154,30 @@ a:hover {
           <label><input type="checkbox"> 국적·사진·지문자료 및 대상자가 주장하는 이름 등 상세 기재 시 조회시간 단축됨</label>
         </div>
       </div>
+
+      <!-- ✅ 추가된 부분 시작 -->
+      <h4 onclick="toggleSection(this)">2. 여권 등 신분증 미소지 외국인 업무처리 지침</h4>
+      <div class="content">
+        <h4 onclick="toggleSection(this)">① 무지로 신분증을 휴대하지 않은 경우</h4>
+        <div class="content">
+          <label><input type="checkbox"> 현장에서 본인 진술을 청취하고 신원확인 방법(폴리폰, 출입국사무소 등) 병행</label>
+          <label><input type="checkbox"> 출입국관리법 제27조 위반 관련 행정조치 검토</label>
+        </div>
+        <h4 onclick="toggleSection(this)">② 주취, 언어소통 문제 등으로 신원확인을 할 수 없는 경우</h4>
+        <div class="content">
+          <label><input type="checkbox"> 의사소통 가능한 통역인 또는 주변인 협조 요청</label>
+          <label><input type="checkbox"> 신원확인이 불가한 경우 임시보호조치 검토</label>
+          <label><input type="checkbox"> 긴급을 요하는 경우 출입국관리사무소 즉시 통보</label>
+        </div>
+        <h4 onclick="toggleSection(this)">③ 자신의 인적사항을 밝히기를 거부하는 경우</h4>
+        <div class="content">
+          <label><input type="checkbox"> 형사절차(불응 시 공무집행방해 등) 병행 검토</label>
+          <label><input type="checkbox"> 사진·지문 채취 및 출입국기관 협조 요청</label>
+          <label><input type="checkbox"> 필요 시 경찰서 외사계 또는 출입국관리사무소 동행</label>
+        </div>
+      </div>
+      <!-- ✅ 추가된 부분 끝 -->
+
     </div>
   </div>
 
