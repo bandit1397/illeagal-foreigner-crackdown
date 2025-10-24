@@ -74,6 +74,11 @@ a:hover {
   border: 1px solid #ffe08a;
   margin-top: 10px;
 }
+/* ✅ 추가: 여권 라벨과 같은 위치 정렬용 */
+.law-link {
+  display: block;
+  margin-left: 1.7em; /* '여'자 시작 위치에 맞춤 */
+}
 </style>
 </head>
 <body>
@@ -100,16 +105,16 @@ a:hover {
   <h3 onclick="toggleSection(this)">▶ 사전 외국인 신원확인(출입국법 위반 여부 판단)</h3>
   <div class="content">
     <label><input type="checkbox"> 여권 소지 확인</label>
-      <a href="https://www.law.go.kr/법령/출입국관리법/제27조" target="_blank">• 출입국관리법 제27조(여권등의 휴대 및 제시)</a><br>
-      <a href="https://www.law.go.kr/법령/출입국관리법/제98조" target="_blank">• 출입국관리법 제98조(100만 원 이하의 벌금)</a>
+      <a class="law-link" href="https://www.law.go.kr/법령/출입국관리법/제27조" target="_blank">• 출입국관리법 제27조(여권등의 휴대 및 제시)</a>
+      <a class="law-link" href="https://www.law.go.kr/법령/출입국관리법/제98조" target="_blank">• 출입국관리법 제98조(100만 원 이하의 벌금)</a>
     
     <label><input type="checkbox"> 체류기간 확인</label>
-      <a href="https://www.law.go.kr/법령/출입국관리법/제25조" target="_blank">• 출입국관리법 제25조(체류기간 연장허가)</a><br>
-      <a href="https://www.law.go.kr/법령/출입국관리법/제94조" target="_blank">• 출입국관리법 제94조 17호(3년 이하의 징역 또는 3천만원 이하의 벌금)</a>
+      <a class="law-link" href="https://www.law.go.kr/법령/출입국관리법/제25조" target="_blank">• 출입국관리법 제25조(체류기간 연장허가)</a>
+      <a class="law-link" href="https://www.law.go.kr/법령/출입국관리법/제94조" target="_blank">• 출입국관리법 제94조 17호(3년 이하의 징역 또는 3천만원 이하의 벌금)</a>
     
     <label><input type="checkbox"> 체류자격 확인(체류자격외 활동 확인)</label>
-      <a href="https://www.law.go.kr/법령/출입국관리법/제20조" target="_blank">• 출입국관리법 제20조(체류자격 외 활동)</a><br>
-      <a href="https://www.law.go.kr/법령/출입국관리법/제94조" target="_blank">• 출입국관리법 제94조 12호(3년 이하의 징역 또는 3천만원 이하의 벌금)</a>
+      <a class="law-link" href="https://www.law.go.kr/법령/출입국관리법/제20조" target="_blank">• 출입국관리법 제20조(체류자격 외 활동)</a>
+      <a class="law-link" href="https://www.law.go.kr/법령/출입국관리법/제94조" target="_blank">• 출입국관리법 제94조 12호(3년 이하의 징역 또는 3천만원 이하의 벌금)</a>
     
     <h4 onclick="toggleSection(this)">참고:</h4>
     <div class="content">
