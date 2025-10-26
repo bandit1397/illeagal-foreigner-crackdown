@@ -257,26 +257,45 @@
   <div class="content">
     <h3 onclick="toggleSection(this)">▶ 불법체류자 통보의무 면제제도</h3>
     <div class="content">
-      <label><input type="checkbox"> 불법체류자가 범죄피해자로서 통보의무 면제 대상에 해당하는 경우 진술저서 등 작성 후 귀가조치</label>
-      <label><input type="checkbox"> 통보의무 면제 대상 범죄(23개)</label>
-      <label><input type="checkbox"> 관련근거</label>
+      <h4 onclick="toggleSection(this)">① 통보의무 면제 대상 판단</h4>
+      <div class="content">
+        <label><input type="checkbox"> 불법체류자가 범죄피해자인 경우 진술서 작성 후 귀가조치</label>
+        <label><input type="checkbox"> 성매매, 가정폭력, 아동학대, 산업재해 등 피해사건 여부 확인</label>
+      </div>
+
+      <h4 onclick="toggleSection(this)">② 면제대상 범죄(23개)</h4>
+      <div class="content">
+        <label><input type="checkbox"> 인신매매, 강간, 성매매, 상해 등 관련범죄 포함</label>
+      </div>
+
+      <h4 onclick="toggleSection(this)">③ 관련근거</h4>
+      <div class="content">
+        <a class="law-link" href="https://www.law.go.kr/법령/출입국관리법시행령/제92조" target="_blank">• 출입국관리법 시행령 제92조(통보의무 면제)</a>
+      </div>
     </div>
 
-    <h3 onclick="toggleSection(this)">▶ 연착처 및 불법체류자 신병인계 통보 예시</h3>
+    <h3 onclick="toggleSection(this)">▶ 연락처 및 불법체류자 신병인계 통보 예시</h3>
     <div class="content">
-      <label><input type="checkbox"> 전국 출입국 외국인관서 연락처</label>
-      <label><input type="checkbox"> 불법체류자 신병인계 통보 양식 등</label>
-      <div class="note">참고: 법령·지침 변경 시 즉시 업데이트</div>
+      <h4 onclick="toggleSection(this)">① 전국 출입국·외국인관서 연락처</h4>
+      <div class="content">
+        <label><input type="checkbox"> 인천공항출입국외국인청 : 032-740-7100</label>
+        <label><input type="checkbox"> 서울출입국관리사무소 : 02-2650-6212</label>
+      </div>
+
+      <h4 onclick="toggleSection(this)">② 신병인계 통보 양식</h4>
+      <div class="content">
+        <label><input type="checkbox"> 불법체류자 신병 인계 통보서 작성(온나라 시스템 사용)</label>
+        <label><input type="checkbox"> 출입국관리사무소에 이메일 또는 공문으로 송부</label>
+        <div class="note">참고: 법령·지침 변경 시 즉시 업데이트 필요</div>
+      </div>
     </div>
   </div>
 
   <script>
     function toggleSection(el) {
       var content = el.nextElementSibling;
-      if (content.style.display === 'block') {
-        content.style.display = 'none';
-      } else {
-        content.style.display = 'block';
+      if (content && content.classList.contains('content')) {
+        content.style.display = (content.style.display === 'block') ? 'none' : 'block';
       }
     }
   </script>
