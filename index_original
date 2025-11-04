@@ -279,6 +279,9 @@
     <div class="content">
       <h4 onclick="toggleSection(this)">① 전국 출입국·외국인관서 연락처</h4>
       <div class="content">
+        <label><input type="checkbox"> 
+          <a href="연락처.pdf" target="_blank">연락처</a>
+        </label>
         <label><input type="checkbox"> 인천공항출입국외국인청 : 032-740-7100</label>
         <label><input type="checkbox"> 서울출입국관리사무소 : 02-2650-6212</label>
       </div>
