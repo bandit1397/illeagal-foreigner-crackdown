@@ -129,16 +129,15 @@
       display: inline-block;
       vertical-align: top;
       margin-left: 0.2em;
-      text-indent: -1.4em;
-      padding-left: 1.4em;
+      text-indent: -1.2em; /* 왼쪽 당김값을 약간 줄임 */
+      padding-left: 1.2em; /* 들여쓰기값도 동일하게 맞춤 */
       line-height: 1.6;
     }
+
     .indent {
       display: inline-block;
-      margin-left: 1.4em; /* "신" 글자 위치와 맞추기 */
+      margin-left: 1.2em; /* "신" 글자 위치와 정확히 맞추기 */
     }
-
-    
 
     .law-link {
       display: block;
@@ -160,9 +159,10 @@
           <input type="checkbox">
           <span class="align-text">
             신고자에게 법무부 불법체류자신고센터(1588-7191) 및 관할 출입국 사무소<br>
-            또는 정부민원안내 콜센터(110)로 신고하도록 안내
+            <span class="indent">또는 정부민원안내 콜센터(110)로 신고하도록 안내</span>
           </span>
         </label>
+
         <label><input type="checkbox"> 신고 접수 경찰관은 관할 출입국관서에 신고내용 통보 (비출동 종결)</label>
       </div>
 
