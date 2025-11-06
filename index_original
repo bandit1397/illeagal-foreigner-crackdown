@@ -140,7 +140,7 @@
     <div class="content">
       <h4 onclick="toggleSection(this)">▶ 단순 출입국관리법 관련 신고</h4>
       <div class="content">
-        <label><input type="checkbox"> 신고자에게 출입국관서에 신고하도록 안내</label>
+        <label><input type="checkbox"> 신고자에게 법무부 불법체류자신고센터(1588-7191) 및 관할 출입국 사무소 또는 정부민원안내 콜센터(110)로 신고하도록 안내</label>
         <label><input type="checkbox"> 신고 접수 경찰관은 관할 출입국관서에 신고내용 통보 (비출동 종결)</label>
       </div>
 
