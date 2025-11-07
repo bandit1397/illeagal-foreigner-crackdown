@@ -118,24 +118,22 @@
     }
 
     /* ✅ 체크박스 정렬 통일 */
-    .checklist {
-      margin-left: 0;
-      padding-left: 0;
+    .sub-checklist {
+      margin-left: 1.8em; /* 제목 밑의 체크박스 전체를 들여쓰기 */
     }
 
     .check-item {
-      position: relative;
       display: block;
-      padding-left: 1.8em; /* 체크박스 공간 확보 */
-      text-indent: -1.8em; /* 체크박스 시작점 기준 정렬 */
+      position: relative;
+      padding-left: 1.8em;
+      text-indent: -1.8em;
       line-height: 1.6;
       margin-bottom: 6px;
     }
 
     .check-item input[type="checkbox"] {
-      position: relative;
-      top: 0.15em;
-      margin-right: 0.5em;
+      vertical-align: top;
+      margin-right: 0.4em;
     }
 
     .law-link {
