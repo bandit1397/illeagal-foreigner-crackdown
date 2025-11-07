@@ -126,17 +126,16 @@
     
 
     .check-item {
-      display: block;
-      position: relative;
-      padding-left: 1.8em; /* 체크박스 공간 확보 */
-      text-indent: -1.8em; /* 체크박스 위치에 맞게 첫줄만 당김 */
+      display: flex;
+      align-items: flex-start;
+      gap: 0.4em;
       line-height: 1.6;
       margin-bottom: 6px;
     }
 
     .check-item input[type="checkbox"] {
-      vertical-align: top;
-      margin-right: 0.4em;
+      margin-top: 0.2em;
+      flex-shrink: 0;
     }
 
     .law-link {
