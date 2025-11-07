@@ -117,22 +117,22 @@
       margin-top: 10px;
     }
 
-    /* 기존 checklist 들여쓰기 보정 */
-    .checklist,
-    .content > .checklist {
-      margin-left: 0 !important;
+    /* checklist 전체 들여쓰기 */
+    .checklist {
+      margin-left: 24px; /* 제목보다 안쪽으로 들여쓰기 */
     }
+
     /* 체크박스 아이템 정렬 */
     .check-item {
       display: block;
       position: relative;
       padding-left: 1.8em; /* 체크박스 공간 확보 */
-      text-indent: -1.8em; /* 체크박스 위치를 왼쪽 기준으로 정렬 */
+      text-indent: -1.8em; /* 체크박스와 텍스트 정렬 */
       line-height: 1.6;
       margin-bottom: 6px;
     }
 
-    /* 체크박스 세부 위치 보정 */
+    /* 체크박스 위치 미세 조정 */
     .check-item input[type="checkbox"] {
       vertical-align: top;
       margin-right: 0.4em;
