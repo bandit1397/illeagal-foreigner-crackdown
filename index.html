@@ -147,8 +147,9 @@
 </head>
 
 <body>
-  <h1>112 출동 시 외국인 현장체크리스트</h1>
-
+  <h1 style="text-align:center; margin-top:0; padding:1rem 0; font-size:1.8rem;">
+    외국인 관련 112 신고 출동 메뉴얼
+  </h1>
   <h2 onclick="toggleSection(this)">1. 신고 접수</h2>
   <div class="content">
     <h3 onclick="toggleSection(this)">▶ 출동/비출동 여부 판단</h3>
@@ -334,5 +335,30 @@
       }
     }
   </script>
+
+<!-- 여기에 의견 남기기 버튼 삽입 -->
+<div style="margin-top: 1.5rem; text-align: center;">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSckIGUsdSSDhNwaCH66-hoxq3SU-rK8XZhjyZrLfkwJc6CCmw/viewform?embedded=true" 
+     target="_blank"
+     style="
+       display: inline-block;
+       padding: 0.7rem 1.4rem;
+       background: #4CAF50;
+       color: white;
+       font-size: 1rem;
+       font-weight: bold;
+       border-radius: 6px;
+       text-decoration: none;
+       box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+       transition: 0.2s;
+     "
+     onmouseover="this.style.opacity='0.85'"
+     onmouseout="this.style.opacity='1'"
+  >
+    오류 & 추가 의견 남기기
+  </a>
+</div>
+
+
 </body>
 </html>
