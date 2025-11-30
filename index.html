@@ -5,12 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>112 출동 시 외국인 현장체크리스트</title>
   <style>
-    body {
-      font-family: Apple SD Gothic Neo, Malgun Gothic, Arial;
-      margin: 16px;
-      background: #f7f9fc;
-      color: #111;
-    }
+   html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background: #f5f7fa;
+    color: #222;
+  }
+
+/* 로고 화면 스타일 */
+  #logo-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #000;
+  }
+
+  #logo-screen img {
+    max-width: 90%;
+    max-height: 90%;
+    cursor: pointer;
+    transition: transform 2s ease, opacity 2s ease;
+  }
+
+  /* 로고 사라질 때 애니메이션 */
+  .logo-zoom-out {
+    transform: scale(1.5); /* 확대 */
+    opacity: 0;             /* 사라짐 */
+  }
+
+  /* 매뉴얼 화면 숨김 + 초기 상태는 축소 */
+ #manual-screen {
+  /* display:none 제거 */
+  padding: 1rem;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  pointer-events: none; /* 숨겨져 있을 때 클릭 막기 */
+}
+
+#manual-screen.show {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+
+
+    
 
     h1 {
       font-size: 1.5rem;
@@ -145,8 +192,17 @@
     }
   </style>
 </head>
-
+  
 <body>
+  
+<!-- 로고 화면 -->
+<div id="logo-screen">
+  <img src="logo.png" alt="수배자 매뉴얼 로고" id="logo-img">
+</div>
+
+<div id="manual-screen">
+
+
   <h1 style="text-align:center; margin-top:0; padding:1rem 0; font-size:1.8rem;">
     불법체류자 메뉴얼
   </h1>
@@ -359,6 +415,27 @@
   </a>
 </div>
 
+</div>
 
+
+<script>
+  const logoImg = document.getElementById('logo-img');
+  const logoScreen = document.getElementById('logo-screen');
+  const manualScreen = document.getElementById('manual-screen');
+
+  logoImg.addEventListener('click', () => {
+    logoImg.classList.add('logo-zoom-out');
+
+    setTimeout(() => {
+      logoScreen.style.display = 'none';
+    
+      // display는 항상 block, 클래스로 등장 효과 적용
+      manualScreen.classList.add('show');
+    }, 2000);
+  });
+</script>
+
+
+  
 </body>
 </html>
