@@ -15,6 +15,11 @@
     color: #222;
   }
 
+   #feedback-btn {
+     margin: 0.3rem auto;    /* 이 버튼만 중앙 */
+   }
+
+
 /* 로고 화면 스타일 */
   #logo-screen {
     display: flex;
@@ -393,26 +398,14 @@
   </script>
 
 <!-- 여기에 의견 남기기 버튼 삽입 -->
-<div style="margin-top: 1.5rem; text-align: center;">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfySlZaqrhBajTAq-lZvCBROE13xRvBj2gvoV_nbRNis9o0eQ/viewform?embedded=true" 
-     target="_blank"
-     style="
-       display: inline-block;
-       padding: 0.7rem 1.4rem;
-       background: #4CAF50;
-       color: white;
-       font-size: 1rem;
-       font-weight: bold;
-       border-radius: 6px;
-       text-decoration: none;
-       box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-       transition: 0.2s;
-     "
-     onmouseover="this.style.opacity='0.85'"
-     onmouseout="this.style.opacity='1'"
+<div style="text-align: center;">
+  <button 
+    id="feedback-btn"
+    style="padding:12px 20px; font-size:16px; background:#007bff; color:white; border:none; border-radius:6px; cursor:pointer;"
+    onclick="window.open('https://tally.so/r/44Q1WA', '_blank');"
   >
     오류 & 추가 의견 남기기
-  </a>
+  </button>
 </div>
 
 </div>
